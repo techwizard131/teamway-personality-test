@@ -5,10 +5,6 @@ export const HeaderContainer = styled.nav`
   width: 100%;
   
   .header--wrapper {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 40px 30px;
     max-width: 1284px;
     margin: 0 auto;
   }
