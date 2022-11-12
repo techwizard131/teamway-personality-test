@@ -12,7 +12,7 @@ const QuizPanel = ({ question, answers, step, isLastStep, onNext, onPrev }) => {
 
   return (
     <QuizPanelContainer className="quiz-panel--container">
-      <div className="quiz-panel--wrapper">
+      <div className="quiz-panel--wrapper w-full">
         <p className="quiz-panel--question">{question}</p>
         <span className="block text-sm text-white text-left italic font-thin mt-[8px]">All questions are required</span>
         <div className="flex flex-col gap-3 mt-[15px]">
