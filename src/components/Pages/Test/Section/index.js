@@ -21,7 +21,7 @@ const TestSection = () => {
   const mutation = useMutation(
     (values) => submitResult(values),
     {
-      onSuccess: (data, variables, context) => {
+      onSuccess: (data) => {
         router.push(`/result?personality=${data.personality}`);
       },
     },
@@ -63,6 +63,7 @@ const TestSection = () => {
     if (slider && questionData) {
       slider.slickGoTo(step);
     }
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [step]);
 
   return (

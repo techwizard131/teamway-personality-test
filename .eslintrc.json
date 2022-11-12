@@ -7,7 +7,6 @@
     "extends": [
         "eslint:recommended",
         "plugin:react/recommended",
-        "plugin:prettier/recommended",
         "next/core-web-vitals"
     ],
     "parserOptions": {
@@ -17,20 +16,11 @@
         "ecmaVersion": 12,
         "sourceType": "module"
     },
-    "parser": "babel-eslint",
     "plugins": [
         "react"
     ],
     "rules": {
         "react/prop-types": 0,
-        "react/react-in-jsx-scope": "off",
-        "prettier/prettier": [
-            "error",
-            {
-              "endOfLine": "auto",
-              "singleQuote": true,
-              "semi": true
-            }
-        ]
+        "react/react-in-jsx-scope": "off"
     }
 }
